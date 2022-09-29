@@ -6,7 +6,7 @@ body {
 
 body {
   background-color: var(--very-dark-blue);
-  background-image: url(/dist/svg/bg-stars.svg);
+  background-image: url(../svg/bg-stars.svg);
   background-repeat: repeat;
   background-position: 50% 50%;
   background-size: contain;
@@ -31,7 +31,7 @@ main {
 }
 
 footer {
-  background-image: url(/dist/svg/pattern-hills.svg);
+  background-image: url(../svg/pattern-hills.svg);
   background-repeat: no-repeat;
   background-position: 50% 0%;
   background-size: cover;
