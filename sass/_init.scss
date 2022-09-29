@@ -1,1 +1,53 @@
 // variables
+
+:root {
+  // colors
+
+  // primary
+  --grayish-blue: #{hsl(237, 18%, 59%)};
+  --soft-red: #{hsl(345, 95%, 68%)};
+
+  // neutral
+  --white: #{hsl(0, 0%, 100%)};
+  --desaturated-blue: #{hsl(236, 21%, 26%)};
+  --desaturated-blue2: #{hsl(236, 21%, 22%)};
+  --very-dark-blue: #{hsl(235, 16%, 14%)};
+  --mostly-black: #{hsl(234, 17%, 12%)};
+
+  // typography
+
+  --ff-base: 'Red Hat Text', sans-serif;
+  --fs-base: 0.875rem;
+  --fw-base: 700;
+
+  --lh-title: 1.33em;
+  --ls-title: 0.33em;
+
+  --ls-number: -0.025rem;
+
+  --fs-label: 0.4375rem;
+  --lh-label: 1.28em;
+  --ls-label: 0.42em;
+}
+
+@keyframes hideCurrent {
+  0%,
+  50% {
+    visibility: visible;
+  }
+
+  51%,
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+  }
+
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
