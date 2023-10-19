@@ -28,15 +28,20 @@
   --fs-label: 0.4375rem;
   --lh-label: 1.28em;
   --ls-label: 0.42em;
+
+  --animation-duration: 850ms;
+  --animation-easing: cubic-bezier(0.55, 0, 1, 0.45);
+
+  // --animation-easing: linear;
 }
 
 @keyframes hideCurrent {
   0%,
-  50% {
+  85% {
     visibility: visible;
   }
 
-  51%,
+  86%,
   100% {
     visibility: hidden;
   }

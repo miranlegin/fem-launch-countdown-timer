@@ -1,11 +1,11 @@
-<div class="item">
-    <div class="item-number {{ id }}">
+<div class="item" data-{{ id }}>
+    <div class="item-number">
         <div class="number">
-            <div class="layer layer-top _offset">24</div>
-            <div class="layer layer-bottom _current">23</div>
+            <div class="layer layer-top _offset">{{ timeOffset }}</div>
+            <div class="layer layer-bottom _current">{{ time }}</div>
             <div class="layer layer-flip">
-                <div class="flip-top _current">23</div>
-                <div class="flip-bottom _offset">24</div>
+                <div class="flip flip-top _current">{{ time }}</div>
+                <div class="flip flip-bottom _offset">{{ timeOffset }}</div>
             </div>
         </div>
     </div>
