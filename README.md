@@ -42,7 +42,6 @@ Users should be able to:
 
 - Assemble static site generator, could have been plain HTML instead
 - SCSS
-- Flexbox
 - CSS Animations
 - Vanilla JS for flipping logic
 
