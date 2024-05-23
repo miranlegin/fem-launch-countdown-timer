@@ -23,22 +23,6 @@ let previousTimeBetweenDates,
   previousMinute = futureMinutes,
   previousSecond = futureSeconds;
 
-// function setInitialValues() {
-//   const timeDifference = futureDate - currentDate;
-
-//   const seconds = Math.floor((timeDifference / 1000) % 60);
-//   const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
-//   const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
-//   const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-//   animateFlipCard(seconds, 'data-seconds');
-//   animateFlipCard(minutes, 'data-minutes');
-//   animateFlipCard(hours, 'data-hours');
-//   animateFlipCard(days, 'data-days');
-// }
-
-// setInitialValues();
-
 function calculateTime() {
   const currentDate = new Date();
   const timeDifference = futureDate - currentDate;
@@ -48,8 +32,6 @@ function calculateTime() {
   const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
   const hours = Math.floor((timeDifference / (1000 * 60 * 60)) % 24);
   const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-  // console.log(`D = ${days} | H = ${hours} | M = ${minutes} | S = ${seconds}`);
 
   if (seconds !== previousSecond) {
     previousSecond = seconds;
@@ -72,7 +54,9 @@ function calculateTime() {
   }
 }
 
-setInterval(calculateTime, 150);
+calculateTime();
+
+setInterval(calculateTime, 325);
 
 function animateFlipCard(time, elem) {
   // declare container element do append data to

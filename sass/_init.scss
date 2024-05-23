@@ -29,10 +29,8 @@
   --lh-label: 1.28em;
   --ls-label: 0.42em;
 
-  --animation-duration: 850ms;
+  --animation-duration: 750ms;
   --animation-easing: cubic-bezier(0.55, 0, 1, 0.45);
-
-  // --animation-easing: linear;
 }
 
 @keyframes hideCurrent {

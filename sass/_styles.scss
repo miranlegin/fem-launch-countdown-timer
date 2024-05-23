@@ -60,16 +60,11 @@ h1 {
   column-gap: 1rem;
 }
 
-// * {
-//   animation-play-state: paused !important;
-// }
-
 .number {
   position: relative;
   color: var(--soft-red);
   width: 100%;
   height: 100%;
-  // line-height: 148px;
   line-height: 1.75em;
   perspective: 600px;
   border-radius: 0.5rem;
